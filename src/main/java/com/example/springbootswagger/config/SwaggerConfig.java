@@ -16,8 +16,7 @@ import java.util.ArrayList;
 @EnableSwagger2 //开启swagger
 public class SwaggerConfig {
     /**
-     * 创建Docket的bean实例对象
-     * @return
+     * 创建Docket的bean实例
      */
     @Bean  //Swagger的使用主要是要将docket对象传入IOC容器
     public Docket getDocket(){
@@ -27,7 +26,7 @@ public class SwaggerConfig {
                 .apiInfo(getApiInfo())  // 接口文档相关信息
                 //RequestHandlerSelectors.basePackage指定要扫描的包
                 //RequestHandlerSelectors.any()扫描所有包
-                //RequestHandlerSelectors.none()任何包都不扫描
+                //RequestHandlerSelectors.none()任何包都不扫
                 //RequestHandlerSelectors.withMethodAnnotation()扫描方法上的指定注解
                 //RequestHandlerSelectors.withMethodAnnotation()扫描类上的指定注解
                 .select().apis(RequestHandlerSelectors.basePackage("com.swagger.controller"))

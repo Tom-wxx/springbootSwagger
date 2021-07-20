@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 @Api(tags = "用户控制器")
 public class UserController {
 
+
+
     //只要接口返回了实体类 swagger就会有显示
 
     @ApiOperation("得到一个user")

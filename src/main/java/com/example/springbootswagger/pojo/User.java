@@ -13,6 +13,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @ApiModel("用户实体类")
 public class User implements Serializable {
+
     //如果属性是private就不会暴露出来
     @ApiModelProperty("用户的id")
     private  Integer id;

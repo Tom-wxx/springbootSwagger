@@ -10,6 +10,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 @RestController
 public class SwaggerController {
 
+
     @RequestMapping ("/hello")
     public String hello() {
         return "hello:wxx";
